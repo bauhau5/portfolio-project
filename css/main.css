@@ -1,0 +1,200 @@
+/* SMACSS: Scalable and Modular Architecture for CSS */
+
+/* Base rules: body, input, button, ul, ol, etc */
+
+html {
+}
+
+body {
+	font-family: "Roboto", arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	width: 100%;
+	min-height: 100%;
+	margin: 0;
+}
+
+main {
+	padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	text-transform: uppercase;
+	color: #2d3c49;
+}
+
+h1 {
+	font-size: 425%;
+	line-height: 4.5rem;
+	margin-top: 1.5rem;
+	margin-bottom: 3rem;
+}
+
+h2 {
+	font-size: 260%;
+	line-height: 3rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+h3 {
+	font-size: 160%;
+	line-height: 3rem;
+	margin-top: 1.5rem;
+	margin-bottom: 0rem;
+}
+
+h4 {
+	font-size: 100%;
+	line-height: 1.5rem;
+	margin-top: 1.5rem;
+	margin-bottom: 0rem;
+}
+
+h5 {
+	font-size: 100%;
+	line-height: 1.5rem;
+	margin-top: 1.5rem;
+	margin-bottom: 0rem;
+}
+
+p,
+ul,
+ol,
+pre,
+table,
+blockquote {
+	margin-top: 0em;
+	margin-bottom: 1.5em;
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+a {
+	color: #2d3c49;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	/* ...and now for the proper property */
+	transition: 0.5s;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #02b3e4;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	/* ...and now for the proper property */
+	transition: 0.5s;
+}
+
+/* Layout rules: global elements, size of cap, footer, sidebar, etc */
+
+#header {
+	border-bottom: solid 4px #7d97ad;
+	margin-bottom: 20px;
+	padding: 20px;
+}
+
+.header-logo {
+}
+
+.header-logo img {
+	height: 60px;
+}
+
+.header-title {
+	width: 100%;
+}
+
+header {
+}
+
+footer {
+	background: #2d3c49;
+	color: #7d97ad;
+	font-size: 12px;
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+footer a {
+	color:#7d97ad
+}
+
+footer a:hover {
+	color: #02b3e4
+}
+
+footer .copyright {
+	width: 100%;
+}
+
+footer .navigation {
+	width: 100%;
+}
+
+footer .navigation ul {
+	list-style: none;
+	padding-left: 0;
+	margin-top: 20px;
+	border-top:solid 1px #7d97ad;
+}
+
+/* Modules rules: Blocks that can be used multiple times on a single page */
+
+.flex-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.hero {
+	max-width: 100%;
+}
+
+.featured-01,
+.featured-02,
+.featured-03 {
+	width: 100%;
+}
+
+/* State rules: various statuses of the modules and the basis of the site, only section in which !important is allowed */
+
+.hero img {
+	width: 100%;
+}
+
+#featured-work img {
+	width: 100%;
+}
+
+/* Theme rules: Design styles that you might need to replace */
+
+#header h1 {
+	font-weight: 100;
+	margin-bottom: 0;
+}
+
+#header h3 {
+	font-weight: 500;
+	margin-top: 0;
+}
+
+h2.featured-work-title {
+	color: #7d97ad;
+	text-transform: capitalize;
+	font-weight: 300;
+}
